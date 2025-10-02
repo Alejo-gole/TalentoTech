@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Mi página sencilla</title>
-    <script src="javascript/main.js"></script>
 </head>
 
-<body>
-
-    <header id="headerBackground">
-        <div id="title">
+<body class="light">
+<!-- Header section -->
+    <header>
+        <div>
             <h1>Mi Página Sencilla</h1>
-            <div id="modesA">
-                <button onclick="chgMode()">Cambiar modo</button>
+            <div class="toggle">
+                <button id="toggleBtn">Cambiar modo</button>
             </div>
         </div>
         <div>
             <nav>
                 <a href="#Welcome">Inicio</a>
                 <a href="#About">Sobre Mi</a>
-                <a href="Contact">Contacto</a>
+                <a href="#Contact">Contacto</a>
+                <a href="#Gallery">Galería</a>
             </nav>
         </div>
     </header>
-
-    <section>
+<!-- Content section -->
+    <section class="info-container">
         <div id="Welcome">
             <h2>Bienvenido</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, totam minima ipsum voluptatum
                 excepturi dolorum similique, reprehenderit, pariatur quaerat explicabo aliquam inventore corporis fuga
                 corrupti quia animi sapiente cupiditate officiis?</p>
         </div>
-        <div>
-            <h2 id="About">Sobre Mi</h2>
+        <div id="About">
+            <h2>Sobre Mi</h2>
             <h3>Perfil</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos dolor cumque iure voluptatum? Quas
                 officiis animi nemo aut deleniti delectus odit quaerat, aliquid facilis alias sint saepe. Accusamus,
@@ -47,16 +47,43 @@
                 <li>11</li>
             </ul>
         </div>
-        <div>
-            <h2 id="Contacto">Contacto</h2>
+        <div id="Contact">
+            <h2>Contacto</h2>
             <p>Puedes escribirme a: </p>
         </div>
     </section>
-
+<!-- Gallery section -->
+    <section id="Gallery">
+        <h1>Galería</h1>
+        <div class="card-container">
+                <div class="sinCard">
+                    <img src="img/01.jpg" alt="">
+                </div>
+                <div class="sinCard">
+                    <img src="img/02.jpg" alt="">
+                </div>
+                <div class="sinCard">
+                    <img src="img/03.jpg" alt="">
+                </div>
+        </div>
+    </section>
+<!-- Form section -->
+    <section id="contact-form">
+        <div class="form-container">
+            <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </form>
+        </div>
+    </section>
+<!-- Footer section -->
     <footer>
         <p>&copy; 2025 Mi sitio. Todos los derechos reservados</p>
     </footer>
 
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>
