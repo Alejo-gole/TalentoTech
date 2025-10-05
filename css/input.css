@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    /* Fondo general y superficies */
+    --color-bg-body: #FFFFFF;
+    --color-bg-section: #E5E5E5;
+    --color-bg-card: #FCA311;
+
+    /* Texto */
+    --color-text-dark: #000000;
+    --color-text-alternative: #14213D;
+    --color-text-light: #FFFFFF;
+
+    /* Acentos */
+    --color-accent-yellow: #FCA311;
+}

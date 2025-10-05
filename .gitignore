@@ -1,0 +1,8 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos de build de Tailwind
+css/main.css
+
+# Archivos temporales
+*.log

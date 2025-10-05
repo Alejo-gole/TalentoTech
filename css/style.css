@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 /*variables tema light*/
 body.light {
     --bg-color: #FFFFFF;
@@ -19,8 +23,6 @@ body.kawaii {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Helvetica, sans-serif;
