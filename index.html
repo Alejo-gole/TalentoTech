@@ -12,46 +12,67 @@
 
 <body class="font-serif bg-bg-body">
     <!-- Header section -->
-    <header class="relative rounded-b-lg mx-5 p-3 bg-bg-section">
-            <h1 class="text-center text-text-dark text-3xl">Ejercicio Web - Talento TECH</h1>
-            <div class="absolute right-4 top-0">
-                <button id="toggleBtn" type="button" aria-pressed="false" aria-label="Cambiar a modo dark, light o kawaii" class="cursor-pointer rounded-b-lg p-2 bg-text-alternative text-text-light text-sm transition-transform duration-200 hover:scale-110 hover:text-accent-yellow">Cambiar modo</button>
-            </div>
-        <div class="text-text-dark">
-            <nav class="mt-5" aria-label="Menú Principal">
-                <ul class="flex justify-center gap-4">
-                    <li><a class="inline-block px-3 transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" aria-current="page" href="index.html">Inicio</a></li>
-                    <li><a class="inline-block px-3 transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Intro">Sobre Mi</a></li>
-                    <li><a class="inline-block px-3 transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Gallery">Galería</a></li>
-                    <li><a class="inline-block px-3 transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#">Formulario</a></li>
+    <header class="absolute w-full px-6 py-3 bg-bg-section md:flex md:flex-row z-50">
+        <div class="w-1/2">
+            <h1 class="text-text-dark md:text-2xl font-bold">Ejercicio Web - Talento TECH</h1>
+        </div>
+            
+        <div class="mt-3 text-text-dark">
+            <nav aria-label="Menú Principal">
+                <ul class="flex gap-7 text-xs md:text-base justify-center">
+                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" aria-current="page" href="index.html">Inicio</a></li>
+                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Intro">Sobre Mi</a></li>
+                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Gallery">Galería</a></li>
+                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="form.html">Formulario</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="fixed top-3 right-3 md:right-10 text-xs md:text-sm">
+            <button id="toggleBtn" type="button" aria-pressed="false" aria-label="Cambiar a modo dark, light o kawaii" class="cursor-pointer rounded-lg p-2 bg-text-alternative text-text-light transition-transform duration-200 hover:scale-110 hover:text-accent-yellow">Cambiar modo</button>
+        </div>
     </header>
+    
+    <main class="relative">
+        <!-- Image background section -->
+     <section class="">
+        <img class="h-96 md:w-full md:h-[32rem] object-cover brightness-30" src="img/backg.jpg" alt="Imagen abstracta de tonos oscuros y rojizos" >
+        <div class="absolute top-40 left-10 text-text-light">
+            <h2 class="mb-5 font-bold text-2xl md:text-6xl">
+                Bienvenido
+            </h2>
+            <p class="md:text-2xl md:pt-20 md:pl-10 md:w-2xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum repudiandae aperiam aspernatur ea illo, dolorem doloribus impedit nisi possimus id, soluta eum dolor quia, omnis aliquam sunt cupiditate! Similique, odit.
+            </p>
+        </div>
+     </section>
     <!-- Content section -->
-    <section class="rounded-md bg-bg-section mx-3 mt-5 p-5 flex flex-wrap">
-        <div class="w-full md:w-auto mb-5" id="Intro">
-            <h2 class="text-2xl font-bold border-b border-text-dark text-text-dark mb-3">Introducción al Proyecto</h2>
+    <section class="bg-bg-section p-5 flex flex-col">
+        <div class="md:w-auto mb-5 md:p-6" id="Intro">
+            <h2 class="md:text-2xl font-bold text-text-dark mb-2">Introducción al Proyecto</h2>
 
-            <p class="indent-5 text-text-dark">
+            <p class="w-full pl-5 text-text-dark text-sm md:text-base">
                 En esta sección se explica la lógica general del frontend. <br> 
                 El sitio utiliza una estructura HTML modular, con divisiones principales para cada parte del contenido. Cada bloque está encapsulado en un <em>section</em> o <em>div</em> que permite mantener el código ordenado y fácilmente manipulable. <br>
                 Las clases de Tailwind como <em>bg-bg-section</em>, <em>text-text-dark</em> o <em>rounded-md</em> usan variables CSS personalizadas (definidas mediante <em>--color-*</em>), lo que facilita el cambio de temas dinámicos sin reescribir estilos.
             </p>
-            <h3 class="text-lg font-bold text-text-dark">Lógica de Cambio de Tema con JavaScript</h3>
+            <h3 class="md:text-2xl font-bold text-text-dark mb-2 mt-5">Lógica de Cambio de Tema con JavaScript</h3>
 
-            <p class="indent-5 text-text-dark">
+            <p class="w-full pl-5 text-text-dark text-sm md:text-base">
                 El botón “Cambiar modo” ejecuta un script que altera las variables CSS globales del documento <em>(:root)</em> para actualizar instantáneamente la apariencia del sitio.
                 El código utiliza una estructura <em>switch</em> para rotar entre tres modos:
             </p>
-            <ul class="text-text-dark list-disc list-inside">
-                <li class="indent-5">Modo Claro (predeterminado): paleta neutra y luminosa.</li>
-                <li class="indent-5">Modo Oscuro: tonos fríos y alto contraste.</li>
-                <li class="indent-5">Modo Kawaii: colores cálidos, alegres y contrastantes.</li>
+            <ul class="text-text-dark text-sm md:text-base list-disc list-inside">
+                <li class="pl-10">Modo Claro (predeterminado): paleta neutra y luminosa.</li>
+                <li class="pl-10">Modo Oscuro: tonos fríos y alto contraste.</li>
+                <li class="pl-10">Modo Kawaii: colores cálidos, alegres y contrastantes.</li>
             </ul>
         </div>
-        <div class="lg:w-1/3 mr-10">
-            <h2 class="text-2xl font-bold border-b border-text-dark text-text-dark mb-3">Uso de Tailwind CSS y Variables de Tema</h2>
+        
+    </section>
+    <!-- Cards section -->
+    <section class="bg-bg-body md:flex">
+        <div class="m-10 bg-bg-section p-5 rounded-md md:flex-1/2">
+            <h2 class="text-2xl font-bold text-text-dark mb-3">Uso de Tailwind CSS y Variables de Tema</h2>
             <p class="indent-5 text-text-dark">
                 Esta parte explica cómo se configuran y aplican los estilos del sitio. El proyecto utiliza Tailwind CSS compilado mediante el comando: <br> <code class="font-mono text-sm">npx @tailwindcss/cli -i css/input.css -o css/main.css --watch</code> <br> 
                 De esta forma, cada cambio en el archivo <em>input.css</em> se refleja automáticamente en el archivo <em>main.css</em>, manteniendo un flujo de trabajo en vivo durante la edición. <br>
@@ -59,8 +80,8 @@
             </p>
             
         </div>
-        <div class="lg:w-1/2 mr-10">
-            <h2 class="text-2xl font-bold border-b border-text-dark text-text-dark">Composición Visual y Efectos Interactivos</h2>
+        <div class="m-10 bg-bg-section p-5 rounded-md md:flex-1/2">
+            <h2 class="text-2xl font-bold text-text-dark mb-3">Composición Visual y Efectos Interactivos</h2>
 
             <p class="indent-5 text-text-dark">
                 La galería muestra cómo aplicar efectos visuales y transiciones suaves con Tailwind. <br>
@@ -71,21 +92,23 @@
         </div>
     </section>
     <!-- Gallery section -->
-    <section id="Gallery" class="w-screen mx-auto my-5 p-5 bg-bg-section">
-        <h1 class="font-bold text-3xl left-3 border-b border-text-dark text-text-dark pb-3">Galería</h1>
+    <section id="Gallery" class="mx-auto my-5 p-5 bg-bg-section">
+        <h1 class="font-bold text-3xl left-3 text-text-dark">Galería</h1>
 
-        <div class="flex flex-wrap gap-10 justify-center m-5">
-            <div class="w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
+        <div class="flex flex-wrap gap-5 md:gap-10 justify-center m-5">
+            <div class="md:w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
                 <img class="h-full object-cover rounded-md" src="img/01.jpg" alt="">
             </div>
-            <div class="w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
+            <div class="md:w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
                 <img class="h-full object-cover rounded-md" src="img/02.jpg" alt="">
             </div>
-            <div class="w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
+            <div class="md:w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
                 <img class="h-full object-cover rounded-md" src="img/03.jpg" alt="">
             </div>
         </div>
     </section>
+    </main>
+
     <!-- Footer section -->
     <footer role="contentinfo" class="text-center py-5 bg-bg-section">
         <p class="text-text-dark">&copy; 2025 Mi sitio. Todos los derechos reservados</p>
