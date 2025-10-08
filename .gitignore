@@ -6,3 +6,4 @@ css/main.css
 
 # Archivos temporales
 *.log
+.prettierrc

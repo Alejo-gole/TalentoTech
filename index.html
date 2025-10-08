@@ -1,120 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ejercicio de página sencilla para el bootcamp de Talento TECH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ejercicio de página sencilla para el bootcamp de Talento TECH"
+    />
     <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
     <title>Talento TECH</title>
-</head>
+  </head>
 
-<body class="font-serif bg-bg-body">
+  <body class="bg-bg-body font-serif">
     <!-- Header section -->
-    <header class="absolute w-full px-6 py-3 bg-bg-section md:flex md:flex-row z-50">
-        <div class="w-1/2">
-            <h1 class="text-text-dark md:text-2xl font-bold">Ejercicio Web - Talento TECH</h1>
-        </div>
-            
-        <div class="mt-3 text-text-dark">
-            <nav aria-label="Menú Principal">
-                <ul class="flex gap-7 text-xs md:text-base justify-center">
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" aria-current="page" href="index.html">Inicio</a></li>
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Intro">Sobre Mi</a></li>
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Gallery">Galería</a></li>
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="form.html">Formulario</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="fixed top-3 right-3 md:right-10 text-xs md:text-sm">
-            <button id="toggleBtn" type="button" aria-pressed="false" aria-label="Cambiar a modo dark, light o kawaii" class="cursor-pointer rounded-lg p-2 bg-text-alternative text-text-light transition-transform duration-200 hover:scale-110 hover:text-accent-yellow">Cambiar modo</button>
-        </div>
+    <header class="bg-bg-section absolute z-50 w-full px-6 py-3 md:flex md:flex-row">
+      <div class="w-1/2">
+        <h1 class="text-text-dark font-bold md:text-2xl">Ejercicio Web - Talento TECH</h1>
+      </div>
+
+      <div class="text-text-dark mt-3">
+        <nav aria-label="Menú Principal">
+          <ul class="flex justify-center gap-7 text-xs md:text-base">
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                aria-current="page"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                href="#Intro"
+                >Sobre Mi</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                href="#Gallery"
+                >Galería</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                href="form.html"
+                >Formulario</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="fixed top-3 right-3 text-xs md:right-10 md:text-sm">
+        <button
+          id="toggleBtn"
+          type="button"
+          aria-pressed="false"
+          aria-label="Cambiar a modo dark, light o kawaii"
+          class="bg-text-alternative text-text-light hover:text-accent-yellow cursor-pointer rounded-lg p-2 transition-transform duration-200 hover:scale-110"
+        >
+          Cambiar modo
+        </button>
+      </div>
     </header>
-    
+
     <main class="relative">
-        <!-- Image background section -->
-     <section class="">
-        <img class="h-96 md:w-full md:h-[32rem] object-cover brightness-30" src="img/backg.jpg" alt="Imagen abstracta de tonos oscuros y rojizos" >
-        <div class="absolute top-40 left-10 text-text-light">
-            <h2 class="mb-5 font-bold text-2xl md:text-6xl">
-                Bienvenido
-            </h2>
-            <p class="md:text-2xl md:pt-20 md:pl-10 md:w-2xl">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum repudiandae aperiam aspernatur ea illo, dolorem doloribus impedit nisi possimus id, soluta eum dolor quia, omnis aliquam sunt cupiditate! Similique, odit.
-            </p>
+      <!-- Image background section -->
+      <section class="">
+        <img
+          class="h-96 object-cover brightness-30 md:h-[32rem] md:w-full"
+          src="img/backg.jpg"
+          alt="Imagen abstracta de tonos oscuros y rojizos"
+        />
+        <div class="text-text-light absolute top-40 left-10">
+          <h2 class="mb-5 text-2xl font-bold md:text-6xl">Bienvenido</h2>
+          <p class="md:w-2xl md:pt-20 md:pl-10 md:text-2xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum repudiandae aperiam
+            aspernatur ea illo, dolorem doloribus impedit nisi possimus id, soluta eum dolor quia,
+            omnis aliquam sunt cupiditate! Similique, odit.
+          </p>
         </div>
-     </section>
-    <!-- Content section -->
-    <section class="bg-bg-section p-5 flex flex-col">
-        <div class="md:w-auto mb-5 md:p-6" id="Intro">
-            <h2 class="md:text-2xl font-bold text-text-dark mb-2">Introducción al Proyecto</h2>
+      </section>
+      <!-- Content section -->
+      <section class="bg-bg-section flex flex-col p-5">
+        <div class="mb-5 md:w-auto md:p-6" id="Intro">
+          <h2 class="text-text-dark mb-2 font-bold md:text-2xl">Introducción al Proyecto</h2>
 
-            <p class="w-full pl-5 text-text-dark text-sm md:text-base">
-                En esta sección se explica la lógica general del frontend. <br> 
-                El sitio utiliza una estructura HTML modular, con divisiones principales para cada parte del contenido. Cada bloque está encapsulado en un <em>section</em> o <em>div</em> que permite mantener el código ordenado y fácilmente manipulable. <br>
-                Las clases de Tailwind como <em>bg-bg-section</em>, <em>text-text-dark</em> o <em>rounded-md</em> usan variables CSS personalizadas (definidas mediante <em>--color-*</em>), lo que facilita el cambio de temas dinámicos sin reescribir estilos.
-            </p>
-            <h3 class="md:text-2xl font-bold text-text-dark mb-2 mt-5">Lógica de Cambio de Tema con JavaScript</h3>
+          <p class="text-text-dark w-full pl-5 text-sm md:text-base">
+            En esta sección se explica la lógica general del frontend. <br />
+            El sitio utiliza una estructura HTML modular, con divisiones principales para cada parte
+            del contenido. Cada bloque está encapsulado en un <em>section</em> o <em>div</em> que
+            permite mantener el código ordenado y fácilmente manipulable. <br />
+            Las clases de Tailwind como <em>bg-bg-section</em>, <em>text-text-dark</em> o
+            <em>rounded-md</em> usan variables CSS personalizadas (definidas mediante
+            <em>--color-*</em>), lo que facilita el cambio de temas dinámicos sin reescribir
+            estilos.
+          </p>
+          <h3 class="text-text-dark mt-5 mb-2 font-bold md:text-2xl">
+            Lógica de Cambio de Tema con JavaScript
+          </h3>
 
-            <p class="w-full pl-5 text-text-dark text-sm md:text-base">
-                El botón “Cambiar modo” ejecuta un script que altera las variables CSS globales del documento <em>(:root)</em> para actualizar instantáneamente la apariencia del sitio.
-                El código utiliza una estructura <em>switch</em> para rotar entre tres modos:
-            </p>
-            <ul class="text-text-dark text-sm md:text-base list-disc list-inside">
-                <li class="pl-10">Modo Claro (predeterminado): paleta neutra y luminosa.</li>
-                <li class="pl-10">Modo Oscuro: tonos fríos y alto contraste.</li>
-                <li class="pl-10">Modo Kawaii: colores cálidos, alegres y contrastantes.</li>
-            </ul>
+          <p class="text-text-dark w-full pl-5 text-sm md:text-base">
+            El botón “Cambiar modo” ejecuta un script que altera las variables CSS globales del
+            documento
+            <em>(:root)</em> para actualizar instantáneamente la apariencia del sitio. El código
+            utiliza una estructura <em>switch</em> para rotar entre tres modos:
+          </p>
+          <ul class="text-text-dark list-inside list-disc text-sm md:text-base">
+            <li class="pl-10">Modo Claro (predeterminado): paleta neutra y luminosa.</li>
+            <li class="pl-10">Modo Oscuro: tonos fríos y alto contraste.</li>
+            <li class="pl-10">Modo Kawaii: colores cálidos, alegres y contrastantes.</li>
+          </ul>
         </div>
-        
-    </section>
-    <!-- Cards section -->
-    <section class="bg-bg-body md:flex">
-        <div class="m-10 bg-bg-section p-5 rounded-md md:flex-1/2">
-            <h2 class="text-2xl font-bold text-text-dark mb-3">Uso de Tailwind CSS y Variables de Tema</h2>
-            <p class="indent-5 text-text-dark">
-                Esta parte explica cómo se configuran y aplican los estilos del sitio. El proyecto utiliza Tailwind CSS compilado mediante el comando: <br> <code class="font-mono text-sm">npx @tailwindcss/cli -i css/input.css -o css/main.css --watch</code> <br> 
-                De esta forma, cada cambio en el archivo <em>input.css</em> se refleja automáticamente en el archivo <em>main.css</em>, manteniendo un flujo de trabajo en vivo durante la edición. <br>
-                Las variables CSS definidas con <em>--color-*</em> permiten que Tailwind use los mismos nombres de color en todas las clases. Esto garantiza coherencia visual y facilita la integración con JavaScript para cambiar los temas en tiempo real. 
-            </p>
-            
+      </section>
+      <!-- Cards section -->
+      <section class="bg-bg-body md:flex">
+        <div class="bg-bg-section m-10 rounded-md p-5 md:flex-1/2">
+          <h2 class="text-text-dark mb-3 text-2xl font-bold">
+            Uso de Tailwind CSS y Variables de Tema
+          </h2>
+          <p class="text-text-dark indent-5">
+            Esta parte explica cómo se configuran y aplican los estilos del sitio. El proyecto
+            utiliza Tailwind CSS compilado mediante el comando: <br />
+            <code class="font-mono text-sm"
+              >npx @tailwindcss/cli -i css/input.css -o css/main.css --watch</code
+            >
+            <br />
+            De esta forma, cada cambio en el archivo <em>input.css</em> se refleja automáticamente
+            en el archivo <em>main.css</em>, manteniendo un flujo de trabajo en vivo durante la
+            edición. <br />
+            Las variables CSS definidas con <em>--color-*</em> permiten que Tailwind use los mismos
+            nombres de color en todas las clases. Esto garantiza coherencia visual y facilita la
+            integración con JavaScript para cambiar los temas en tiempo real.
+          </p>
         </div>
-        <div class="m-10 bg-bg-section p-5 rounded-md md:flex-1/2">
-            <h2 class="text-2xl font-bold text-text-dark mb-3">Composición Visual y Efectos Interactivos</h2>
+        <div class="bg-bg-section m-10 rounded-md p-5 md:flex-1/2">
+          <h2 class="text-text-dark mb-3 text-2xl font-bold">
+            Composición Visual y Efectos Interactivos
+          </h2>
 
-            <p class="indent-5 text-text-dark">
-                La galería muestra cómo aplicar efectos visuales y transiciones suaves con Tailwind. <br>
-                Cada imagen está dentro de un contenedor con clases como <em>grayscale hover:filter-none</em> y <em>hover:scale-105</em>, lo que crea un efecto de enfoque y zoom al pasar el cursor. <br>
-                Estas animaciones están optimizadas con <em>transition-transform duration-200</em>, que asegura una respuesta fluida sin afectar el rendimiento. <br>
-                Además, las imágenes incluyen <em>object-cover</em> y <em>rounded-md</em> para mantener proporciones equilibradas y esquinas suaves.
-            </p>
+          <p class="text-text-dark indent-5">
+            La galería muestra cómo aplicar efectos visuales y transiciones suaves con Tailwind.
+            <br />
+            Cada imagen está dentro de un contenedor con clases como
+            <em>grayscale hover:filter-none</em> y <em>hover:scale-105</em>, lo que crea un efecto
+            de enfoque y zoom al pasar el cursor. <br />
+            Estas animaciones están optimizadas con <em>transition-transform duration-200</em>, que
+            asegura una respuesta fluida sin afectar el rendimiento. <br />
+            Además, las imágenes incluyen <em>object-cover</em> y <em>rounded-md</em> para mantener
+            proporciones equilibradas y esquinas suaves.
+          </p>
         </div>
-    </section>
-    <!-- Gallery section -->
-    <section id="Gallery" class="mx-auto my-5 p-5 bg-bg-section">
-        <h1 class="font-bold text-3xl left-3 text-text-dark">Galería</h1>
+      </section>
+      <!-- Gallery section -->
+      <section id="Gallery" class="bg-bg-section mx-auto my-5 p-5">
+        <h1 class="text-text-dark left-3 text-3xl font-bold">Galería</h1>
 
-        <div class="flex flex-wrap gap-5 md:gap-10 justify-center m-5">
-            <div class="md:w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
-                <img class="h-full object-cover rounded-md" src="img/01.jpg" alt="">
-            </div>
-            <div class="md:w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
-                <img class="h-full object-cover rounded-md" src="img/02.jpg" alt="">
-            </div>
-            <div class="md:w-1/4 grayscale hover:filter-none transition-transform duration-200 hover:scale-105">
-                <img class="h-full object-cover rounded-md" src="img/03.jpg" alt="">
-            </div>
+        <div class="m-5 flex flex-wrap justify-center gap-5 md:gap-10">
+          <div
+            class="grayscale transition-transform duration-200 hover:scale-105 hover:filter-none md:w-1/4"
+          >
+            <img class="h-full rounded-md object-cover" src="img/01.jpg" alt="" />
+          </div>
+          <div
+            class="grayscale transition-transform duration-200 hover:scale-105 hover:filter-none md:w-1/4"
+          >
+            <img class="h-full rounded-md object-cover" src="img/02.jpg" alt="" />
+          </div>
+          <div
+            class="grayscale transition-transform duration-200 hover:scale-105 hover:filter-none md:w-1/4"
+          >
+            <img class="h-full rounded-md object-cover" src="img/03.jpg" alt="" />
+          </div>
         </div>
-    </section>
+      </section>
     </main>
 
     <!-- Footer section -->
-    <footer role="contentinfo" class="text-center py-5 bg-bg-section">
-        <p class="text-text-dark">&copy; 2025 Mi sitio. Todos los derechos reservados</p>
+    <footer role="contentinfo" class="bg-bg-section py-5 text-center">
+      <p class="text-text-dark">&copy; 2025 Mi sitio. Todos los derechos reservados</p>
     </footer>
 
     <script src="javascript/main.js"></script>
-</body>
-
+  </body>
 </html>

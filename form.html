@@ -1,52 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ejercicio de página con formulario para el bootcamp de Talento TECH">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ejercicio de página con formulario para el bootcamp de Talento TECH"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
     <title>Formulario TECH</title>
-</head>
+  </head>
 
-<body class="font-serif bg-bg-body">
+  <body class="bg-bg-body font-serif">
     <!-- Header section -->
-    <header class="absolute w-full px-6 py-3 bg-bg-section md:flex md:flex-row z-50">
-        <div class="w-1/2">
-            <h1 class="text-text-dark md:text-2xl font-bold">Ejercicio Web - Talento TECH</h1>
-        </div>
-            
-        <div class="mt-3 text-text-dark">
-            <nav aria-label="Menú Principal">
-                <ul class="flex gap-7 text-xs md:text-base justify-center">
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" aria-current="page" href="index.html">Inicio</a></li>
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="index.html#Intro">Sobre Mi</a></li>
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="index.html#Gallery">Galería</a></li>
-                    <li><a class="inline-block transition-transform duration-200 hover:scale-110 hover:text-accent-yellow" href="#Form">Formulario</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="fixed top-3 right-3 md:right-10 text-xs md:text-sm">
-            <button id="toggleBtn" type="button" aria-pressed="false" aria-label="Cambiar a modo dark, light o kawaii" class="cursor-pointer rounded-lg p-2 bg-text-alternative text-text-light transition-transform duration-200 hover:scale-110 hover:text-accent-yellow">Cambiar modo</button>
-        </div>
+    <header class="bg-bg-section absolute z-50 w-full px-6 py-3 md:flex md:flex-row">
+      <div class="w-1/2">
+        <h1 class="text-text-dark font-bold md:text-2xl">Ejercicio Web - Talento TECH</h1>
+      </div>
+
+      <div class="text-text-dark mt-3">
+        <nav aria-label="Menú Principal">
+          <ul class="flex justify-center gap-7 text-xs md:text-base">
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                aria-current="page"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                href="index.html#Intro"
+                >Sobre Mi</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                href="index.html#Gallery"
+                >Galería</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-accent-yellow inline-block transition-transform duration-200 hover:scale-110"
+                href="#Form"
+                >Formulario</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="fixed top-3 right-3 text-xs md:right-10 md:text-sm">
+        <button
+          id="toggleBtn"
+          type="button"
+          aria-pressed="false"
+          aria-label="Cambiar a modo dark, light o kawaii"
+          class="bg-text-alternative text-text-light hover:text-accent-yellow cursor-pointer rounded-lg p-2 transition-transform duration-200 hover:scale-110"
+        >
+          Cambiar modo
+        </button>
+      </div>
     </header>
 
     <main>
-        <section id="Form">
-            <div>
-                <h1>Titulo</h1>
-                <form action="">
-
-                </form>
-            </div>
-        </section>
+      <section id="Form">
+        <div>
+          <h1>Titulo</h1>
+          <form action=""></form>
+        </div>
+      </section>
     </main>
 
-    <footer role="contentinfo" class="text-center py-5 bg-bg-section">
-        <p class="text-text-dark">&copy; 2025 Mi sitio. Todos los derechos reservados</p>
+    <footer role="contentinfo" class="bg-bg-section py-5 text-center">
+      <p class="text-text-dark">&copy; 2025 Mi sitio. Todos los derechos reservados</p>
     </footer>
 
     <script src="javascript/main.js"></script>
-</body>
-
+  </body>
 </html>
