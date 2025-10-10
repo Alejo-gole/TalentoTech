@@ -66,11 +66,63 @@
       </div>
     </header>
 
-    <main>
-      <section id="Form">
-        <div>
-          <h1>Titulo</h1>
-          <form action=""></form>
+    <main class="p-10">
+      <section id="Form" class="mt-36 flex justify-center">
+        <div class="bg-bg-section rounded-md p-5">
+          <h1 class="text-text-dark pb-5 text-2xl font-bold">Titulo</h1>
+          <form action="click">
+            <div class="text-text-dark md:flex md:gap-3">
+              <label for="fname">Nombre</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                class="bg-bg-body mb-3 ml-5 max-w-2/3 rounded-md"
+              />
+              <br />
+              <label for="lname">Apellido</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                class="bg-bg-body mb-3 ml-5 max-w-2/3 rounded-md"
+              />
+            </div>
+            <label for="uni" class="text-text-dark">Universidad</label>
+            <br />
+            <select
+              name="uni"
+              id="uni"
+              class="bg-bg-body text-text-dark mb-3 w-full rounded-md px-2"
+            >
+              <option value="uniA">Universidad A</option>
+              <option value="uniB">Universidad B</option>
+              <option value="uniC">Universidad C</option>
+            </select>
+            <label for="email" class="text-text-dark mr-5">Correo</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-bg-body mb-5 ml-5 max-w-2/3 rounded-md md:w-full md:max-w-5/6"
+            />
+            <div class="text-text-dark flex justify-evenly">
+              <input
+                type="submit"
+                name="submit"
+                id="sumbit"
+                value="Enviar"
+                class="bg-bg-body rounded-md p-2"
+              />
+              <input
+                type="reset"
+                name="reset"
+                id="reset"
+                value="Limpiar"
+                class="bg-bg-body rounded-md p-2"
+              />
+            </div>
+          </form>
         </div>
       </section>
     </main>
